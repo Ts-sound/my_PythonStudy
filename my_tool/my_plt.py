@@ -6,7 +6,7 @@ def drawSinglePicture(x=[], y=[], xlab='x', ylab='y', p_tltle='Figure'):
     (x轴数据，y轴数据，x标签，y标签，标题)
 
   '''
-  
+
   fig, ax = plt.subplots()
   ax.plot(x, y)
       

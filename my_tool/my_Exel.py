@@ -18,7 +18,8 @@ def dataWriteToExel(matrix=[[]], fileName='null.xls'):
 
 if __name__ == '__main__':
   matrix_1 = [['she',2,3],[4,5,6],[7,8,10]]
-  dataWriteToExel(matrix_1)
+  dataWriteToExel(matrix_1,r'G:\\Test\\1.xls')   #绝对路径
+#  dataWriteToExel(matrix_1,'1.xls')   #相对路径
 else:
     print ('')
 
