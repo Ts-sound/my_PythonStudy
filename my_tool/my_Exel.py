@@ -22,5 +22,3 @@ if __name__ == '__main__':
 #  dataWriteToExel(matrix_1,'1.xls')   #相对路径
 else:
     print ('')
-
-#path1 = r"C:\windows\temp\readme.txt"

@@ -9,19 +9,20 @@ import matplotlib.pyplot as plt
 import socket               # 导入 socket 模块
 import time
 import re
-import math
+#import math
 import xlwt
 #定义AGV小车ip地址及端口
 #测试    '127.0.0.1'    8080
 #实际    '192.168.43.101'    4002
 #host = '127.0.0.1'
 #port =  8080
-host = '192.168.43.101'
+#host = '192.168.43.101'
+host = '192.168.137.101'
 port = 4002
 #记录数据时间
-Time = 50
+Time = 40
 #存储数据文件
-file_name = 'data_12-25-2.txt'
+file_name = 'data_03-03-e.txt'
 #数据上传频率 
 Hz = 50
 outData_excel = []
@@ -56,7 +57,7 @@ def flt_figure(x,y1,y2,y3,y4):
     # ax2
     ax2 = plt.subplot(222)
     ax2.plot(x, y2)
-    ax2.set(xlabel='t(s)', ylabel='y(mm)',
+    ax2.set(xlabel='t(s)', ylabel='v(mm)',
        title='')
     ax2.grid()
     
@@ -122,7 +123,7 @@ def dataWriteToExel(matrix=[[]],fileName = 'null.xls'):
 
     sheet1 = xl.add_sheet('data1')
 
- 
+
     # write matrix data 
     for row in range(0,len(matrix)):
         for colunm in range(0,len(matrix[row])):

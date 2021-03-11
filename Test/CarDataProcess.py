@@ -7,7 +7,9 @@ import re
 from my_tool.my_math import hex_to_int
 from my_tool.my_Exel import dataWriteToExel
 
-file = "C:\\Users\\76086\\Desktop\\data_12-25-1.txt"
+#file = "C:\\Users\\76086\\Desktop\\data_12-25-1.txt"
+file = "G:\\JavaWorkspace\\Py_notes\\src\\others\\data_03-03-d.txt"
+xls_file = "data_03-03-d.xls"
 Hz = 50
 
 # Data 
@@ -52,7 +54,7 @@ for array in result:
 
 print(matrix)
 print(y4)
-dataWriteToExel(matrix,"data.xls")
+dataWriteToExel(matrix,xls_file)
 
 # 通过matplotlib画出图形
 plt.figure(figsize=(14, 8), dpi=70)
@@ -70,7 +72,7 @@ ax1.grid()
 # ax2
 ax2 = plt.subplot(222)
 ax2.plot(x, y2)
-ax2.set(xlabel='t(s)', ylabel='y(m)',
+ax2.set(xlabel='t(s)', ylabel='v(m/s)',
        title='')
 ax2.grid()
 
@@ -84,7 +86,7 @@ ax3.grid()
 # ax3
 ax4 = plt.subplot(224)
 ax4.plot(x, y4)
-ax4.set(xlabel='t(s)', ylabel='v(m/s)',
+ax4.set(xlabel='t(s)', ylabel='omega(rad/s)',
        title='')
 ax4.grid()
 #

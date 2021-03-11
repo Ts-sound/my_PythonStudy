@@ -23,7 +23,7 @@ class PIDClass(object):
     def Out(self, E):
         '''
                 计算PID输出
-        E:偏差量 
+        E:偏差量   （目标值 - 当前值）
         '''
         self.Ec = E - self.E;
         self.E = E
@@ -40,3 +40,17 @@ class PIDClass(object):
       self.E = 0
       self.Ec = 0
       self.SE = 0
+
+
+if __name__ == '__main__':
+  l = 10 
+  arr = [l]
+  PID = PIDClass(0.2, 0, 0.1)
+  
+  for i in range(0, 20):
+    out = PID.Out(0 - l)  # 目标值为0
+    l += out
+    arr.append(l)
+  print(arr)
+else:
+    print ('')
