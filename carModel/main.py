@@ -77,7 +77,9 @@ def calc_Omega():
 for i in range(0, Time * 100):
 
     carPre = car
-    car.calc_CarPos_after10ms(v,calc_Omega())
+#    car.calc_CarPos_after10ms(v,calc_Omega())
+    car.calc_CarPos_after10ms(1,30)
+    
     posDeterminant.append(car.dataArray())
 
 print(posDeterminant)

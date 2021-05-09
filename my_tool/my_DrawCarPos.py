@@ -55,13 +55,13 @@ def drawCarPos(determinant = [[]],timePeriod = 0.01):
     # ax5
     ax5 = plt.subplot(235)
     ax5.plot(t, theta)
-    ax5.set(xlabel='t(s)', ylabel='angle(°)',
+    ax5.set(xlabel='t(s)', ylabel='theta(°)',
             title='')
     ax5.grid()
     # ax6
     ax6 = plt.subplot(236)
     ax6.plot(t, omega)
-    ax6.set(xlabel='t(s)', ylabel='omega(°/s)',
+    ax6.set(xlabel='t(s)', ylabel='d(m)',
             title='')
     ax6.grid()
     #

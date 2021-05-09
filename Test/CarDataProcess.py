@@ -8,8 +8,8 @@ from my_tool.my_math import hex_to_int
 from my_tool.my_Exel import dataWriteToExel
 
 #file = "C:\\Users\\76086\\Desktop\\data_12-25-1.txt"
-file = "G:\\JavaWorkspace\\Py_notes\\src\\others\\data_03-03-d.txt"
-xls_file = "data_03-03-d.xls"
+file = "G:\\JavaWorkspace\\Py_notes\\src\\others\\data_03-02-1.txt"
+xls_file = "data_03-02-1.xls"
 Hz = 50
 
 # Data 

@@ -17,12 +17,12 @@ import xlwt
 #host = '127.0.0.1'
 #port =  8080
 #host = '192.168.43.101'
-host = '192.168.137.101'
+host = '192.168.137.102'
 port = 4002
 #记录数据时间
 Time = 40
 #存储数据文件
-file_name = 'data_03-03-e.txt'
+file_name = 'data_04-28-2.txt'
 #数据上传频率 
 Hz = 50
 outData_excel = []

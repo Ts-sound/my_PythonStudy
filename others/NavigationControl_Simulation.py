@@ -15,7 +15,7 @@ x = []
 y1, y2, y3 = [], [], []
 
 # 横向偏差m
-delta_d = -0.02
+delta_d = -0.03
 delta_d_K_1 = delta_d
 Ek = 0
 # 距离目标角度偏差 rad 
@@ -23,16 +23,16 @@ Angle = -0.017
 # PID输出角速度    rad/s
 omega = 0
 
-KP = 6
-KI = 0.001
-KD = 600
+KP = 2
+KI = 0
+KD = 200
 # 速度m/s
 V = 1
 # 两点1m
 L = 10
 # 采样周期0.01s
 # delta_T = 0.01
-delta_T = 0.01
+delta_T = 0.013
 Omega_limit = 0.17
 # 时间
 T = int(L / V)
