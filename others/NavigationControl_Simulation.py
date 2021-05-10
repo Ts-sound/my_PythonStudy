@@ -23,7 +23,7 @@ Angle = -0.017
 # PID输出角速度    rad/s
 omega = 0
 
-KP = 2
+KP = 1
 KI = 0
 KD = 200
 # 速度m/s
