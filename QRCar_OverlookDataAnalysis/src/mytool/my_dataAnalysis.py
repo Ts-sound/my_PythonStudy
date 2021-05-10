@@ -42,18 +42,26 @@ dataAnalysis
 def informationDataAnalysis(matrix=[[]]):
     result_Matrix = [[]]
     
-    result_Matrix[0] = ['car.direction', 'car.speed', 'car.input', 'car.warningcode', 'car.errorcode', 'car.y', 'car.theta']
+    result_Matrix[0] = ['car.direction', 'car.speed', 'car.input', 'car.errorcode', 'car.warningcode',  #
+                        'car.leftMotorStatus', 'car.rightMotorStatus', 'car.liftMotorStatus', 'car.turnMotorStatus', #
+                        'car.y', 'car.theta']
     print(result_Matrix)
     
     for raw in range(0, len(matrix)):
-        temp = [0, 0, 0, 0, 0, 0, 0]
+        temp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         temp[0] = matrix[raw][7]
         temp[1] = matrix[raw][8]
         temp[2] = combinationBytes(matrix[raw][13:17])
         temp[3] = matrix[raw][25]
         temp[4] = matrix[raw][26]
-        temp[5] = byte32ToInt(combinationBytes(matrix[raw][39:43]))/1000
-        temp[6] = byte32ToInt(combinationBytes(matrix[raw][43:47]))/1000
+        ###################################
+        temp[5] = combinationBytes(matrix[raw][31:33])
+        temp[6] = combinationBytes(matrix[raw][33:35])
+        temp[7] = combinationBytes(matrix[raw][35:37])
+        temp[8] = combinationBytes(matrix[raw][37:39])
+        ###################################
+        temp[9] = byte32ToInt(combinationBytes(matrix[raw][39:43])) / 1000
+        temp[10] = byte32ToInt(combinationBytes(matrix[raw][43:47])) / 1000
         
         result_Matrix.append(temp)
         

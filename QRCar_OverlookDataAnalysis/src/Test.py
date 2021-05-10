@@ -6,9 +6,9 @@ from mytool.my_dataAnalysis import informationDataAnalysis
 
 # openfile savefile
 
-DATA = open("OverLook.txt", "rb").read().decode('utf-8')
+DATA = open("2021-05-10-12OverLook.txt", "rb").read().decode('utf-8')
 matrix = []
-FileName = 'data.xls'
+FileName = '2021-05-10-12OverLook.xls'
 
 '''
 data filter
@@ -31,7 +31,7 @@ x, y = [], []
 
 for i in range(1, len(matrix)):
     x.append(i)
-    y.append(matrix[i][5])
+    y.append(matrix[i][9])
 
-drawSinglePicture(x, y, 't','m',matrix[0][5])
+drawSinglePicture(x, y, 't','m',matrix[0][9])
 
